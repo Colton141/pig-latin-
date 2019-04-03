@@ -1,0 +1,27 @@
+The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
+Example Input: 3
+Example Output: " "
+
+The program adds "way" to single-letter words beginning with a vowel.
+Example Input: i
+Example Output: iway
+
+The program adds "way" to multi-letter words beginning with a vowel.
+Example Input: away
+Example Output: awayway
+
+The program takes first consonant or consonant cluster and put them at the end, adding "ay".
+Example Input: truck
+Example Output: ucktray
+
+For words begining with "qu" this program takes the first 2 letter and moves them to the end, adding "ay".
+Example Input: quick
+Example Output: ickquay
+
+For words begining with "squ" this program moves the first 3 letters to the end, adding "ay".
+Example Input: squeal
+Example Output: ealsquay
+
+This program treats 'y' as a consonant.
+Example Input: year
+Example Output: earyay
