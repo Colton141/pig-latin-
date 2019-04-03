@@ -2,9 +2,12 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     var userInput = $("#input").val();
-    
+
 var identVowels = ["a" , "e", "i", "o", "u"]
 var userArray = userInput.split(' ');
+var indexArray = userArray.join('');
+console.log(indexArray);
+console.log(userArray);
 
 
 // tells the input to disregard numbers and replace with nothing//
@@ -23,7 +26,6 @@ for (var index = 0; index < userArray.length; index +=1) {
 
 
 
-console.log(userArray);
 
 
 
